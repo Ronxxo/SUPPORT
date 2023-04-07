@@ -6,15 +6,201 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LO LOGRASTE CANTO E´BICHO"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintVertical_bias="0.176" android:id="@+id/textView"
-            android:fontFamily="@font/sonsie_one"/>
 
+    <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 2"
+            app:hintTextColor="@color/white"
+            app:counterEnabled="true"
+            app:counterMaxLength="3"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/teal_200"
+            app:startIconDrawable="@drawable/baseline_bolt_24"
+            tools:layout_editor_absoluteY="101dp" tools:layout_editor_absoluteX="30dp">
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText"
+                android:maxLength="3"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:hint="Nota 2"
+                android:textColorHint="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:selectAllOnFocus="false" android:singleLine="false"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+            android:text="CALCULAR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/button4"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
+            android:layout_marginTop="548dp" android:layout_marginStart="32dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Nota 1"
+            app:hintTextColor="@color/white"
+            app:counterEnabled="true"
+            app:counterMaxLength="3"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/teal_200"
+            app:startIconDrawable="@drawable/baseline_bolt_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0">
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText"
+                android:maxLength="3"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:hint="Nota 1"
+                android:textColorHint="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:selectAllOnFocus="false" android:singleLine="false"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="450dp"
+            android:layout_height="518dp" tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="-5dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="188dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Nota 3"
+                app:hintTextColor="@color/white"
+                app:counterEnabled="true"
+                app:counterMaxLength="3"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="@color/teal_200"
+                app:startIconDrawable="@drawable/baseline_bolt_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0">
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditText"
+                    android:maxLength="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:hint="Nota 3"
+                    android:textColorHint="@color/white"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:selectAllOnFocus="false" android:singleLine="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="448dp"
+            android:layout_height="518dp" tools:layout_editor_absoluteX="-3dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="272dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Nota 4"
+                app:hintTextColor="@color/white"
+                app:counterEnabled="true"
+                app:counterMaxLength="3"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="@color/teal_200"
+                app:startIconDrawable="@drawable/baseline_bolt_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0">
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditText"
+                    android:maxLength="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:hint="Nota 4"
+                    android:textColorHint="@color/white"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:selectAllOnFocus="false" android:singleLine="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="411dp"
+            android:layout_height="512dp" tools:layout_editor_absoluteX="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="352dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Nota 5"
+                app:hintTextColor="@color/white"
+                app:counterEnabled="true"
+                app:counterMaxLength="3"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="@color/teal_200"
+                app:startIconDrawable="@drawable/baseline_bolt_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0">
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditText"
+                    android:maxLength="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:hint="Nota 5"
+                    android:textColorHint="@color/white"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:selectAllOnFocus="false" android:singleLine="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="411dp"
+            android:layout_height="530dp" tools:layout_editor_absoluteX="0dp" android:id="@+id/constraintLayout2">
+
+        <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="432dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Nota 6"
+                app:hintTextColor="@color/white"
+                app:counterEnabled="true"
+                app:counterMaxLength="3"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="@color/teal_200"
+                app:startIconDrawable="@drawable/baseline_bolt_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0">
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditText"
+                    android:maxLength="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:hint="Nota 6"
+                    android:textColorHint="@color/white"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:selectAllOnFocus="false" android:singleLine="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
