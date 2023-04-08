@@ -12,17 +12,15 @@
             android:layout_height="wrap_content"
             android:text="SUPPORT"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintVertical_bias="0.176" android:id="@+id/textView"
-            android:fontFamily="@font/sonsie_one"/>
+            android:id="@+id/textView"
+            android:fontFamily="@font/sonsie_one" android:layout_marginTop="64dp"/>
     <ImageView
             android:layout_width="269dp"
             android:layout_height="372dp" app:srcCompat="@drawable/zeus" android:id="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="100dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="119dp" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.428" android:layout_marginStart="80dp"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
